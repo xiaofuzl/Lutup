@@ -28,8 +28,7 @@ jobs:
       - name: 'Install requirements'
         run: pip3.7 install -r requirements.txt
       - name: 'Working'
-        run: |
-          python3.7 run.py
+        run: python3.7 run.py
         env:
           TG_USER_ID:  ${{secrets.TG_USER_ID}}    # tg通知id
           INVITECODE: ${{secrets.INVITECODE}}
